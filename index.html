@@ -14,12 +14,27 @@
         .bg{
             background-color: #0a5795;
         }
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tc{
+            background: linear-gradient(135deg, #1765a5, #1687ed);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="text-color">Reham Abdelaleem</h1>
-        <p class="text-color">Front End Developer</p>        
+        <h1 class="text-color" style="text-align: center;">Reham Abdelaleem</h1>
+        <p class="text-color" style="text-align: center;">Front End Developer</p>        
     </header>
     <main>
         <section>
@@ -40,7 +55,7 @@
         <section>
             <h2 class="text-color">Experience Timeline</h2>
                 <table border="1" style="width: 100%;">
-                    <caption>Professional Experience Overview</caption>
+                    <caption style="margin-bottom: 1rem;">Professional Experience Overview</caption>
                     <thead class="bg">
                         <th>Company</th>
                         <th>Logo</th>
@@ -51,7 +66,7 @@
                     <tbody>
                         <tr>
                             <td rowspan="2">techcorp</td>
-                            <td rowspan="2"><img src="" alt=""></td>
+                            <td rowspan="2"><div class="logo tc">TC</div></td>
                             <td>senior full stack developer</td>
                             <td>
                                 <ul>
@@ -75,7 +90,7 @@
                         </tr>
                         <tr>
                             <td>digital anency pro</td>
-                            <td><img src="" alt=""></td>
+                            <td><div class="logo" style="background: linear-gradient(135deg, #8e24aa, #e91e63);">DA</div></td>
                             <td>senior full stack developer</td>
                             <td>
                                 <ul>
@@ -88,7 +103,7 @@
                         </tr>
                         <tr>
                             <td>web design studio</td>
-                            <td><img src="" alt=""></td>
+                            <td><div class="logo" style="background: linear-gradient(135deg, #008f83, #38b96b);">WD</div></td>
                             <td>junior web developer</td>
                             <td>
                                 <ul>
@@ -108,11 +123,29 @@
         <section>
             <h2 class="text-color">Contact me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corporis adipisci esse amet consequatur provident necessitatibus non excepturi libero voluptatum aut ea obcaecati, quas hic aliquid mollitia eaque! Adipisci, ullam!</p>
+            <p></p>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>personal information</legend>
+                    <label for="fname">first name</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">last name</label>
+                    <input type="text" name="lname" id="lname">
+                    <br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email"id="email">
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="phone" id="phone">
+                    <br>
+                    <label for="meeting-date">preferred meeting date:</label>
+                    <input type="text" name="meeting-date" id="meeting-date">                    
+                    <label for="contact-time">best time to contact</label>
+                    <input type="text" name="contact-time" id="contact-time">                    
+                </fieldset>
+                <button type="submit" style="color: white; background-color: #0a5795;">send message</button>
+                <button type="reset" style="color: white; background-color: #d81239;">clear data</button>
+            </form>
         </section>
     </main>
-
-
-
-    
 </body>
 </html>
